@@ -6,7 +6,8 @@ on:
       - 'master'
   create:
     tags:
-      - 'v[0-9]+.[0-9]+.[0-9]+**'
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+      - 'v[0-9]+.[0-9]+.[0-9]+-rc.[0-9]+'
   pull_request:
     branches:
       - 'master'
