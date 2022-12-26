@@ -40,6 +40,7 @@ impl BusId for RpcBus {
 type Bus = esb::EndpointList<RpcBus>;
 
 #[repr(C)]
+#[derive(Clone)]
 pub struct Client {
     client_id: ClientId,
     user_agent: String,
