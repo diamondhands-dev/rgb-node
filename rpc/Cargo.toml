@@ -21,9 +21,9 @@ storm-core = "0.8.0"
 lnpbp = "0.8.0"
 bitcoin = "0.28.1"
 psbt = "0.8.4"
-internet2 = "0.8.3"
+internet2 = { git = "https://github.com/diamondhands-rgb/rust-internet2.git", branch = "wip-rgb-lib", version = "0.8.4", features = ["keygen", "zmq"] }
 bp-core = { version = "0.8.0", features = ["psbt"] }
-microservices = { version = "0.8.10", default-features = false, features = ["client"] }
+microservices = { git = "https://github.com/diamondhands-rgb/rust-microservices.git", branch = "wip-rgb-lib", version = "0.8.10", default-features = false, features = ["node"] }
 serde_crate = { package = "serde", version = "1", features = ["derive"], optional = true }
 serde_with = { version = "1.8", optional = true }
 serde_yaml = { version = "0.8.23", optional = true }

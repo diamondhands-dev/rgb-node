@@ -297,6 +297,7 @@ impl Client {
     }
 }
 
+#[derive(Clone)]
 pub struct Handler {
     identity: ServiceId,
 }
